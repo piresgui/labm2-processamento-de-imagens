@@ -1,0 +1,2 @@
+class LabError(Exception):
+    pass
