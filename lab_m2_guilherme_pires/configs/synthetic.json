@@ -1,0 +1,24 @@
+{
+  "default": {
+    "configs": [
+      {"name": "fixed_t120", "method": "fixed", "threshold": 120},
+      {"name": "otsu", "method": "otsu"},
+      {"name": "adaptive_b51_c10", "method": "adaptive", "block_size": 51, "c": 10},
+      {"name": "fixed_t120_inv", "method": "fixed", "threshold": 120, "invert": true}
+    ],
+    "chosen": "otsu",
+    "analyze": {"connectivity": 8, "min_area": 20, "morph": "open:ellipse:3:1,close:ellipse:5:1"}
+  },
+  "images": {
+    "coins_scene.png": {
+      "reference": "images/synthetic/coins_scene_gt.png",
+      "configs": [
+        {"name": "fixed_t120_inv", "method": "fixed", "threshold": 120, "invert": true},
+        {"name": "otsu_inv", "method": "otsu", "invert": true},
+        {"name": "adaptive_b51_c10_inv", "method": "adaptive", "block_size": 51, "c": 10, "invert": true},
+        {"name": "hsv_orange", "method": "hsv", "hsv_lower": "5,120,80", "hsv_upper": "25,255,255"}
+      ],
+      "chosen": "hsv_orange"
+    }
+  }
+}

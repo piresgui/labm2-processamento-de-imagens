@@ -1,0 +1,14 @@
+{
+  "default": {
+    "configs": [
+      {"name": "fixed_t120_inv", "method": "fixed", "threshold": 120, "invert": true},
+      {"name": "fixed_t80_inv", "method": "fixed", "threshold": 80, "invert": true},
+      {"name": "otsu_inv", "method": "otsu", "invert": true, "blur": 5},
+      {"name": "adaptive_b51_c10_inv", "method": "adaptive", "block_size": 51, "c": 10, "invert": true, "blur": 5},
+      {"name": "hsv_dark", "method": "hsv", "hsv_lower": "0,0,0", "hsv_upper": "179,255,70", "blur": 5}
+    ],
+    "chosen": "otsu_inv",
+    "analyze": {"connectivity": 8, "min_area": 2000, "morph": "open:ellipse:5:1,close:ellipse:9:1"}
+  },
+  "images": {}
+}
