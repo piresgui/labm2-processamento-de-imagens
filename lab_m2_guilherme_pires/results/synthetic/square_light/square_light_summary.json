@@ -1,0 +1,45 @@
+{
+  "input": "results/synthetic/masks/square_light_mask.png",
+  "original": "images/synthetic/square_light.png",
+  "connectivity": 8,
+  "min_area": 20,
+  "filter_rule": "componente mantido se area >= 20 pixels",
+  "morphology": [
+    {
+      "op": "open",
+      "shape": "ellipse",
+      "size": 3,
+      "iterations": 1
+    },
+    {
+      "op": "close",
+      "shape": "ellipse",
+      "size": 5,
+      "iterations": 1
+    }
+  ],
+  "warnings": [],
+  "initial": {
+    "foreground_pixels": 2500,
+    "components_conn4": 1,
+    "components_conn8": 1,
+    "raw_count": 1,
+    "filtered_count": 1,
+    "raw_area_total": 2500,
+    "kept_area_total": 2500
+  },
+  "final": {
+    "foreground_pixels": 2496,
+    "components_conn4": 1,
+    "components_conn8": 1,
+    "raw_count": 1,
+    "filtered_count": 1,
+    "raw_area_total": 2496,
+    "kept_area_total": 2496
+  },
+  "stage_files": [
+    "results/synthetic/square_light/square_light_stage0_initial.png",
+    "results/synthetic/square_light/square_light_stage1_open_ellipse3x1.png",
+    "results/synthetic/square_light/square_light_stage2_close_ellipse5x1.png"
+  ]
+}

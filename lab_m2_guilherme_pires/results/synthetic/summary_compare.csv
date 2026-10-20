@@ -1,0 +1,9 @@
+image,config,params,foreground_pixels,total_pixels,foreground_ratio,fp,fn,iou
+coins_scene.png,fixed_t120_inv,"{""method"": ""fixed"", ""invert"": true, ""blur"": 0, ""threshold"": 120}",3831,38400,0.099766,0,1857,0.6735
+coins_scene.png,otsu_inv,"{""method"": ""otsu"", ""invert"": true, ""blur"": 0, ""otsu_threshold"": 176.0}",12855,38400,0.334766,7167,0,0.4425
+coins_scene.png,adaptive_b51_c10_inv,"{""method"": ""adaptive"", ""invert"": true, ""blur"": 0, ""block_size"": 51, ""c"": 10.0}",7010,38400,0.182552,2690,1368,0.5156
+coins_scene.png,hsv_orange,"{""method"": ""hsv"", ""invert"": false, ""blur"": 0, ""hsv_lower"": [5, 120, 80], ""hsv_upper"": [25, 255, 255], ""hue_wrap"": false}",5414,38400,0.14099,0,274,0.9518
+square_light.png,fixed_t120,"{""method"": ""fixed"", ""invert"": false, ""blur"": 0, ""threshold"": 120}",2500,10000,0.25,,,
+square_light.png,otsu,"{""method"": ""otsu"", ""invert"": false, ""blur"": 0, ""otsu_threshold"": 30.0}",2500,10000,0.25,,,
+square_light.png,adaptive_b51_c10,"{""method"": ""adaptive"", ""invert"": false, ""blur"": 0, ""block_size"": 51, ""c"": 10.0}",7256,10000,0.7256,,,
+square_light.png,fixed_t120_inv,"{""method"": ""fixed"", ""invert"": true, ""blur"": 0, ""threshold"": 120}",7500,10000,0.75,,,

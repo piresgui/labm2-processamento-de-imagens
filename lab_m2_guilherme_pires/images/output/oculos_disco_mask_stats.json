@@ -1,0 +1,15 @@
+{
+  "input": "images/input/oculos_disco.jpg",
+  "output": "images/output/oculos_disco_mask.png",
+  "width": 2576,
+  "height": 1932,
+  "foreground_pixels": 1536994,
+  "total_pixels": 4976832,
+  "foreground_ratio": 0.3088297937322377,
+  "params": {
+    "method": "otsu",
+    "invert": true,
+    "blur": 5,
+    "otsu_threshold": 99.0
+  }
+}

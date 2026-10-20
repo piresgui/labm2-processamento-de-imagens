@@ -1,0 +1,6 @@
+python -m pdi_lab --input images/input/disco.jpg --output results/disco/disco --operation compare --config configs/pipeline.json
+python -m pdi_lab --input images/input/disco.jpg --output images/output/disco_mask.png --operation segment --method otsu --blur 5 --invert
+python -m pdi_lab --input images/output/disco_mask.png --output results/disco/disco --operation analyze --connectivity 8 --min-area 2000 --morph open:ellipse:5:1,close:ellipse:9:1 --original images/input/disco.jpg
+python -m pdi_lab --input images/input/oculos_disco.jpg --output results/oculos_disco/oculos_disco --operation compare --config configs/pipeline.json
+python -m pdi_lab --input images/input/oculos_disco.jpg --output images/output/oculos_disco_mask.png --operation segment --method otsu --blur 5 --invert
+python -m pdi_lab --input images/output/oculos_disco_mask.png --output results/oculos_disco/oculos_disco --operation analyze --connectivity 8 --min-area 2000 --morph open:ellipse:5:1,close:ellipse:9:1 --original images/input/oculos_disco.jpg

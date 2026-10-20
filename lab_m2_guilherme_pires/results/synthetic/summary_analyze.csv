@@ -1,0 +1,5 @@
+image,stage,chosen_config,morph,connectivity,min_area,foreground_pixels,components_conn4,components_conn8,raw_count,filtered_count,raw_area_total,kept_area_total
+coins_scene.png,initial,hsv_orange,"open:ellipse:3:1,close:ellipse:5:1",8,20,5414,6,4,4,4,5414,5414
+coins_scene.png,final,hsv_orange,"open:ellipse:3:1,close:ellipse:5:1",8,20,5635,4,4,4,4,5635,5635
+square_light.png,initial,otsu,"open:ellipse:3:1,close:ellipse:5:1",8,20,2500,1,1,1,1,2500,2500
+square_light.png,final,otsu,"open:ellipse:3:1,close:ellipse:5:1",8,20,2496,1,1,1,1,2496,2496

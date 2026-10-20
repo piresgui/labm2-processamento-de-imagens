@@ -1,0 +1,6 @@
+image,config,params,foreground_pixels,total_pixels,foreground_ratio
+oculos_disco.jpg,fixed_t120_inv,"{""method"": ""fixed"", ""invert"": true, ""blur"": 0, ""threshold"": 120}",1760922,4976832,0.353824
+oculos_disco.jpg,fixed_t80_inv,"{""method"": ""fixed"", ""invert"": true, ""blur"": 0, ""threshold"": 80}",1370704,4976832,0.275417
+oculos_disco.jpg,otsu_inv,"{""method"": ""otsu"", ""invert"": true, ""blur"": 5, ""otsu_threshold"": 99.0}",1536994,4976832,0.30883
+oculos_disco.jpg,adaptive_b51_c10_inv,"{""method"": ""adaptive"", ""invert"": true, ""blur"": 5, ""block_size"": 51, ""c"": 10.0}",215233,4976832,0.043247
+oculos_disco.jpg,hsv_dark,"{""method"": ""hsv"", ""invert"": false, ""blur"": 5, ""hsv_lower"": [0, 0, 0], ""hsv_upper"": [179, 255, 70], ""hue_wrap"": false}",1279287,4976832,0.257048

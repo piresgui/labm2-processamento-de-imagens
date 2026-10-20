@@ -1,0 +1,45 @@
+{
+  "input": "images/output/disco_mask.png",
+  "original": "images/input/disco.jpg",
+  "connectivity": 8,
+  "min_area": 2000,
+  "filter_rule": "componente mantido se area >= 2000 pixels",
+  "morphology": [
+    {
+      "op": "open",
+      "shape": "ellipse",
+      "size": 5,
+      "iterations": 1
+    },
+    {
+      "op": "close",
+      "shape": "ellipse",
+      "size": 9,
+      "iterations": 1
+    }
+  ],
+  "warnings": [],
+  "initial": {
+    "foreground_pixels": 1020543,
+    "components_conn4": 48,
+    "components_conn8": 39,
+    "raw_count": 39,
+    "filtered_count": 2,
+    "raw_area_total": 1020543,
+    "kept_area_total": 1020253
+  },
+  "final": {
+    "foreground_pixels": 1020159,
+    "components_conn4": 4,
+    "components_conn8": 4,
+    "raw_count": 4,
+    "filtered_count": 2,
+    "raw_area_total": 1020159,
+    "kept_area_total": 1020105
+  },
+  "stage_files": [
+    "results/disco/disco_stage0_initial.png",
+    "results/disco/disco_stage1_open_ellipse5x1.png",
+    "results/disco/disco_stage2_close_ellipse9x1.png"
+  ]
+}

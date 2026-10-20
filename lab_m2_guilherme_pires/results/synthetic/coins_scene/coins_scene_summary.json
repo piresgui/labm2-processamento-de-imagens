@@ -1,0 +1,45 @@
+{
+  "input": "results/synthetic/masks/coins_scene_mask.png",
+  "original": "images/synthetic/coins_scene.png",
+  "connectivity": 8,
+  "min_area": 20,
+  "filter_rule": "componente mantido se area >= 20 pixels",
+  "morphology": [
+    {
+      "op": "open",
+      "shape": "ellipse",
+      "size": 3,
+      "iterations": 1
+    },
+    {
+      "op": "close",
+      "shape": "ellipse",
+      "size": 5,
+      "iterations": 1
+    }
+  ],
+  "warnings": [],
+  "initial": {
+    "foreground_pixels": 5414,
+    "components_conn4": 6,
+    "components_conn8": 4,
+    "raw_count": 4,
+    "filtered_count": 4,
+    "raw_area_total": 5414,
+    "kept_area_total": 5414
+  },
+  "final": {
+    "foreground_pixels": 5635,
+    "components_conn4": 4,
+    "components_conn8": 4,
+    "raw_count": 4,
+    "filtered_count": 4,
+    "raw_area_total": 5635,
+    "kept_area_total": 5635
+  },
+  "stage_files": [
+    "results/synthetic/coins_scene/coins_scene_stage0_initial.png",
+    "results/synthetic/coins_scene/coins_scene_stage1_open_ellipse3x1.png",
+    "results/synthetic/coins_scene/coins_scene_stage2_close_ellipse5x1.png"
+  ]
+}

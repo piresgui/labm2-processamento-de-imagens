@@ -1,0 +1,5 @@
+image,stage,chosen_config,morph,connectivity,min_area,foreground_pixels,components_conn4,components_conn8,raw_count,filtered_count,raw_area_total,kept_area_total
+disco.jpg,initial,otsu_inv,"open:ellipse:5:1,close:ellipse:9:1",8,2000,1020543,48,39,39,2,1020543,1020253
+disco.jpg,final,otsu_inv,"open:ellipse:5:1,close:ellipse:9:1",8,2000,1020159,4,4,4,2,1020159,1020105
+oculos_disco.jpg,initial,otsu_inv,"open:ellipse:5:1,close:ellipse:9:1",8,2000,1536994,58,51,51,6,1536994,1535860
+oculos_disco.jpg,final,otsu_inv,"open:ellipse:5:1,close:ellipse:9:1",8,2000,1533900,4,4,4,4,1533900,1533900

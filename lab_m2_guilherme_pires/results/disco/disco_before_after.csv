@@ -1,0 +1,8 @@
+metric,initial,final
+foreground_pixels,1020543,1020159
+components_conn4,48,4
+components_conn8,39,4
+raw_count,39,4
+filtered_count,2,2
+raw_area_total,1020543,1020159
+kept_area_total,1020253,1020105

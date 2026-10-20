@@ -1,0 +1,15 @@
+{
+  "input": "images/input/disco.jpg",
+  "output": "images/output/disco_mask.png",
+  "width": 2576,
+  "height": 1932,
+  "foreground_pixels": 1020543,
+  "total_pixels": 4976832,
+  "foreground_ratio": 0.20505876027159445,
+  "params": {
+    "method": "otsu",
+    "invert": true,
+    "blur": 5,
+    "otsu_threshold": 95.0
+  }
+}

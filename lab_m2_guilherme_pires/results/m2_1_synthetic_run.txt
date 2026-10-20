@@ -1,0 +1,5 @@
+width=100
+height=100
+foreground_pixels=2500
+foreground_ratio=0.250000
+params={"method": "fixed", "invert": false, "blur": 0, "threshold": 120}

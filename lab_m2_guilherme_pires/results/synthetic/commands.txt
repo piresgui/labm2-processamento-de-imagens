@@ -1,0 +1,6 @@
+python -m pdi_lab --input images/synthetic/coins_scene.png --output results/synthetic/coins_scene/coins_scene --operation compare --config configs/synthetic.json --reference images/synthetic/coins_scene_gt.png
+python -m pdi_lab --input images/synthetic/coins_scene.png --output results/synthetic/masks/coins_scene_mask.png --operation segment --method hsv --hsv-lower 5,120,80 --hsv-upper 25,255,255
+python -m pdi_lab --input results/synthetic/masks/coins_scene_mask.png --output results/synthetic/coins_scene/coins_scene --operation analyze --connectivity 8 --min-area 20 --morph open:ellipse:3:1,close:ellipse:5:1 --original images/synthetic/coins_scene.png
+python -m pdi_lab --input images/synthetic/square_light.png --output results/synthetic/square_light/square_light --operation compare --config configs/synthetic.json
+python -m pdi_lab --input images/synthetic/square_light.png --output results/synthetic/masks/square_light_mask.png --operation segment --method otsu
+python -m pdi_lab --input results/synthetic/masks/square_light_mask.png --output results/synthetic/square_light/square_light --operation analyze --connectivity 8 --min-area 20 --morph open:ellipse:3:1,close:ellipse:5:1 --original images/synthetic/square_light.png

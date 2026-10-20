@@ -1,0 +1,25 @@
+{
+  "input": "images/synthetic/coins_scene.png",
+  "output": "results/synthetic/masks/coins_scene_mask.png",
+  "width": 240,
+  "height": 160,
+  "foreground_pixels": 5414,
+  "total_pixels": 38400,
+  "foreground_ratio": 0.14098958333333333,
+  "params": {
+    "method": "hsv",
+    "invert": false,
+    "blur": 0,
+    "hsv_lower": [
+      5,
+      120,
+      80
+    ],
+    "hsv_upper": [
+      25,
+      255,
+      255
+    ],
+    "hue_wrap": false
+  }
+}
